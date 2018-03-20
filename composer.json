@@ -1,0 +1,19 @@
+{
+  "name": "vbpupil/file_uploader",
+  "description": "Simple file upload that will elegantly move a file and return a progress response upon completion.",
+  "license": "GPL-3.0-or-later",
+  "authors": [
+    {
+      "name": "Dean Haines",
+      "email": "vbpupil@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "vbpupil\\": "src"
+    }
+  },
+  "require": {
+    "php": ">=5.6"
+  }
+}
