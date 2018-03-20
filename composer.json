@@ -1,5 +1,5 @@
 {
-  "name": "vbpupil/file_uploader",
+  "name": "vbpupil/file-uploader",
   "description": "Simple file upload that will elegantly move a file and return a progress response upon completion.",
   "license": "GPL-3.0-or-later",
   "authors": [
