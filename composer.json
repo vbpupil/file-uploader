@@ -13,7 +13,15 @@
       "vbpupil\\": "src"
     }
   },
+  "autoload-dev": {
+    "psr-4": {
+      "Test\\vbpupil\\": "test"
+    }
+  },
   "require": {
     "php": ">=5.6"
+  },
+  "require-dev": {
+    "phpunit/phpunit" : "5.7.27"
   }
 }
