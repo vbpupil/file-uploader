@@ -36,13 +36,13 @@ class FileUploadTest extends TestCase
                 'name' => 'test.jpg',
 
             ];
-            $allowedExtensions = ['jpeg'];
+            $allowedExtensions = ['jpeg','png'];
 
             $f = FileUpload::upload($fileDetailsArr, '/test/dir/', $allowedExtensions);
         } catch (\Exception $e) {
             $this->assertTrue($e instanceof FileUploadException);
             $this->assertEquals(
-                'File type: jpg is not an allowedExtension.',
+                'File type: \'jpg\' is not an allowed format. Please supply in the following format(s): jpeg,png',
                 $e->getMessage()
             );
         }

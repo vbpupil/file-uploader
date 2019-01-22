@@ -33,7 +33,8 @@ class FileUpload
             $upload = pathinfo($fileDetails['name']);
 
             if (self::extensionCheck($upload['extension'], $allowedExtensions) !== true) {
-                throw new FileUploadException("File type: {$upload['extension']} is not an allowedExtension.");
+                $tmp_allowed_exts = implode(',', $allowedExtensions);
+                throw new FileUploadException("File type: '{$upload['extension']}' is not an allowed format. Please supply in the following format(s): {$tmp_allowed_exts}");
             }
 
             $cleanedFilename = preg_replace('/[^a-zA-Z0-9\-\._]/', '', $upload['filename']);
