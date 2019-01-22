@@ -5,7 +5,7 @@ Simple File Uploader helper class.
 ```php
 if (isset($_FILES)) {
     try {
-        $f = fileUpload::upload(
+        $f = FileUpload::upload(
             $_FILES,
             'path/wher/to/save/file', 
             array('jpeg')
